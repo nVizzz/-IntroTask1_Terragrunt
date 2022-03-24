@@ -1,0 +1,11 @@
+include "root" {
+  path = find_in_parent_folders()
+}
+
+terraform {
+  source = "github.com/nVizzz/IntroTask1_Terraform.git//modules/key_pair?ref=v0.0.23"
+}
+inputs = {
+  name    = "cloudx"
+  ssh_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDVrkAYksUEuOC5nEr2P7SjMBM5IwNM1JONgc6FJy7m6ah7kDgBD7Eas0K7XTFeco6uKN2F2wLNd7zeyFxKjQN3gpWant0Olq0b7qXUJhgjwLv/E5ha8UikfkhhrVpVuA6UkLllwE5RtyJDMHQHvLJfrsW0fGA3P/nb8psLAmsNNHM0nJsnEe6XPc7OcVZMpwzo4QJvaCh2ctZTfOAJG/BafSEi/kea5XO237Yg52YBBeT/rxSSuMA38BvdnykGWBCU0Z4GCa/a+5qBHXuH5VjvaUnlCzQWFokzUWm7YM0mMB+71t6MzaMPcFZtIvVXzMXFytmY0mVsOLcb7Zq8l6B+kk+/f5Q8shPAiD5h0K/d+664ffk47/iBH8/duiyGXtpnUzfCxC0drJ7pg02wohgQrT7i7vEkQHW/GN7mwXmKUcptPHmo83fDJehFfmQj61xXQWX8a/tBoHKKvYbBAO8hpn2JgEUdKuOYnaHvivbRYkoadbDZ57j8ykfhC7tKpzAcci2GgS2neWAx8ykq36DPIhipUojtS6oP6v8n78Gqk/BiILCm7zt9BkWn4nHDE2LRwQXuWSbT94O6XKA+doa9x5J0Q6xwSnnYvyHhnmovKtrrigk5Q52QogOIeIIGGstBsMM1CNXR1j27RZXL8YLluQO/EswLHpSgiYyeYChTow== roman@ubuntu"
+}
