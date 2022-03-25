@@ -3,7 +3,7 @@ include "root" {
 }
 
 terraform {
-  source = "github.com/nVizzz/IntroTask1_Terraform.git//modules/iam?ref=v0.0.23"
+  source = "github.com/nVizzz/IntroTask1_Terraform.git//modules/iam?ref=v0.0.24"
 }
 inputs = {
   name = "cloudx"
